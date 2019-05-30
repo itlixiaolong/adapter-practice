@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .text-box,
+        .options-box {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .options-box {
+            padding: 20px 200px;
+        }
+        
+        .text-box>div {
+            width: 49%;
+            display: inline-block;
+            box-sizing: border-box;
+            height: 300px;
+            border: 1px solid green;
+            font-size: 16px;
+            color: #000;
+            margin-bottom: 20px;
+            padding: 20px;
+            white-space: wrap;
+            word-break: break-all;
+        }
+    </style>
+</head>
+
+<body>
+    <p>测试适配器是否成功!!!</p>
+    <div class="text-box">
+        <div class="getText">get数据</div>
+        <div class="postText">post数据</div>
+    </div>
+    <div class="options-box">
+        <button id="getBtn">点击发送get</button>
+        <button id="postBtn">点击发送post</button>
+    </div>
+</body>
+
+</html>
